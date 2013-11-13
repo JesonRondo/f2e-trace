@@ -16,7 +16,6 @@ Trace = {
     beacon: function(log) {
         var i = new Image();
         i.src = this._interface + encodeURIComponent(log);
-        alert(log);
     },
 
     log: function(info) {
