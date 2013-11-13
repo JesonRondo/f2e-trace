@@ -5,7 +5,7 @@ module.exports = function(grunt) {
             options: {
                 banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
                     'LongZhou <pancnlz@gmail.com> ' +
-                    '<%= grunt.template.today("yyyy-mm-dd") %> */\r'
+                    '<%= grunt.template.today("yyyy-mm-dd") %> */'
             },
             my_target: {
                 files: {
