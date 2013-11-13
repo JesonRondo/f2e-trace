@@ -8,9 +8,7 @@
  * @update    2013-11-13
  * @version   1.0.0
  */
-var Trace = Trace || {};
-
-Trace = {
+var __Trace = {
     _interface: '/mtalk/log/jserrorlog?log=',
 
     beacon: function(log) {
@@ -29,5 +27,5 @@ Trace = {
 };
 
 window.onerror = function(msg, url, line) {
-    Trace.log({msg: msg, url: url, line: line, type: 'f2e-error', _t: +new Date});
+    __Trace.log({msg: msg, url: url, line: line, type: 'f2e-error', _t: +new Date});
 };
