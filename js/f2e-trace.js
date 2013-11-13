@@ -11,11 +11,12 @@
 var Trace = Trace || {};
 
 Trace = {
-    _interface: 'http://www.mogujie.com/mtalk/log/jserrorlog?log=',
+    _interface: '/mtalk/log/jserrorlog?log=',
 
     beacon: function(log) {
         var i = new Image();
         i.src = this._interface + encodeURIComponent(log);
+        alert(log);
     },
 
     log: function(info) {
