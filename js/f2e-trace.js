@@ -29,5 +29,5 @@ Trace = {
 };
 
 window.onerror = function(msg, url, line) {
-    Trace.log({msg: msg, url: url, line: line, type: 'javascript error'});
+    Trace.log({msg: msg, url: url, line: line, type: 'f2e-error', _t: +new Date});
 };
