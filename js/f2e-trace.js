@@ -11,7 +11,7 @@
 var Trace = Trace || {};
 
 Trace = {
-    _interface: 'http://www.mogujie.com/mtalk/log/trace?log=',
+    _interface: 'http://www.mogujie.com/mtalk/log/jserrorlog?log=',
 
     beacon: function(log) {
         var i = new Image();
